@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Món</th>
+            <th>Tiền</th>
+            <th>Món</th>
+            <th>Tiền</th>
+        </tr>
+        <tr>
+            <td>Bún bò</td>
+            <td>20.000</td>
+            <td>Cà phê đá</td>
+            <td>12.000</td>
+        </tr>
+        <tr>
+            <td>Hủ tiếu</td>
+            <td>18.000</td>
+            <td>Cà phê sữa</td>
+            <td>15.000</td>
+        </tr>
+        <tr>
+            <td>Bánh canh</td>
+            <td>17.000</td>
+            <td>Chanh dây</td>
+            <td>13.000</td>
+        </tr>
+        <tr>
+            <td>Phở bò</td>
+            <td>19.000</td>
+            <td>Chanh muối</td>
+            <td>12.000</td>
+        </tr>
+        <tr>
+            <td>Nui</td>
+            <td>15.000</td>
+            <td>Xí muội</td>
+            <td>14.000</td>
+        </tr>
+        <tr>
+            <td>Bánh mì thịt</td>
+            <td>12.000</td>
+            <td>Sữa tươi</td>
+            <td>13.000</td>
+        </tr>
+        <tr>
+            <td>Bánh cuốn</td>
+            <td>15.000</td>
+            <td>Cam vắt</td>
+            <td>17.000</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>Thức ăn</th>
+            <th>Nước uống</th>
+            <th>Thời điểm</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="menuItem" data-name="Bún bò" data-price="20000">Bún bò</div>
+                <div class="menuItem" data-name="Hủ tiếu" data-price="18000">Hủ tiếu</div>
+                <div class="menuItem" data-name="Bánh canh" data-price="17000">Bánh canh</div>
+                <div class="menuItem" data-name="Phở bò" data-price="19000">Phở bò</div>
+                <div class="menuItem" data-name="Nui" data-price="15000">Nui</div>
+                <div class="menuItem" data-name="Bánh mì thịt" data-price="12000">Bánh mì thịt</div>
+                <div class="menuItem" data-name="Bánh cuốn" data-price="15000">Bánh cuốn</div>
+            </td>
+            <td>
+                <div class="menuItem" data-name="Cà phê đá" data-price="12000">Cà phê đá</div>
+                <div class="menuItem" data-name="Cà phê sữa đá" data-price="15000">Cà phê sữa đá</div>
+                <div class="menuItem" data-name="Chanh dây" data-price="13000">Chanh dây</div>
+                <div class="menuItem" data-name="Chanh muối" data-price="12000">Chanh muối</div>
+                <div class="menuItem" data-name="Xí muối" data-price="14000">Xí muối</div>
+                <div class="menuItem" data-name="Sữa tươi" data-price="13000">Sữa tươi</div>
+                <div class="menuItem" data-name="Cam vắt" data-price="17000">Cam vắt</div>
+            </td>
+            <td>
+                <input type="radio" id="nightModeRadio" name="timeOfDay" value="night">
+                <label for="nightModeRadio">Ban đêm</label>
+                <br>
+                <input type="radio" id="dayModeRadio" name="timeOfDay" value="day">
+                <label for="dayModeRadio">Ban ngày</label>
+            </td>
+        </tr>
+    </table>
+
+    <button id="calculateBill">Tính tiền</button>
+    <br>
+    <table id="billTable" style="display: none;">
+        <tr>
+            <th>Món ăn</th>
+            <th>Giá</th>
+        </tr>
+        <tbody id="billItems"></tbody>
+        <tr>
+            <td>Tổng tiền</td>
+            <td id="totalPrice"></td>
+        </tr>
+    </table>
+    <style>
+        /* CSS cho các mục món ăn và thức uống */
+        .menuItem {
+            cursor: pointer;
+            padding: 8px;
+            transition: background-color 0.3s;
+        }
+        
+        .menuItem.selected {
+            background-color: #aaf;
+        }
+        table {
+            border-collapse: collapse; 
+            width: 100%;
+            border: 2px solid #000; 
+        }
+
+        td, th {
+            border: 1px solid #000; 
+            padding: 8px; 
+        }
+    </style>
+    <script src="./Bai_2.js"></script>
+</body>
+</html>

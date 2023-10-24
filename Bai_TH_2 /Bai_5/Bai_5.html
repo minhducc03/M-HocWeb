@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="product-table">
+        <tr>
+            <th>Sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+            <th>Thành tiền</th>
+            <th>Chức năng</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Iphone 11 Pro Max 64GB</td>
+                <td><input type="number" value="2" class="quantity"></td>
+                <td><input type="text" value="31000000" class="price"></td>
+                <td class="subtotal">62000000</td>
+                <td><button class="delete">Xóa</button></td>
+            </tr>
+            <tr>
+                <td>Iphone 15Pro Max 64GB</td>
+                <td><input type="number" value="1" class="quantity"></td>
+                <td><input type="text" value="21000000" class="price"></td>
+                <td class="subtotal">21000000</td>
+                <td><button class="delete">Xóa</button></td>
+            </tr>
+        </tbody>
+        <tr> 
+            <td colspan="3">Tổng tiền</td>
+            <td id="total">83000000</td>
+        </tr>
+    </table>
+    <style>
+        .menuItem {
+            cursor: pointer;
+            padding: 8px;
+            transition: background-color 0.3s;
+        }
+        
+        .menuItem.selected {
+            background-color: #aaf;
+        }
+        table {
+            border-collapse: collapse; 
+            width: 100%;
+            border: 2px solid #000; 
+        }
+
+        td, th {
+            border: 1px solid #000; 
+            padding: 8px; 
+        }
+    </style>
+    <script src="./Bai_5.js"></script>
+</body>
+</html>

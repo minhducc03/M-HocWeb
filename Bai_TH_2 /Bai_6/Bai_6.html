@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu Đăng Ký Tour Du Lịch</title>
+</head>
+<body>
+    <form id="tourForm">
+        <table>
+            <tr>
+                <th colspan="2"> <h2> Phiếu đăng ký tour du lịch </h2></th>
+            </tr>
+            <tr> 
+                <td>Họ và tên khách</td>
+                <td> <input type="text" placeholder="Nguyễn Văn A"></td>
+            </tr>
+            <tr> 
+                <td>Địa chỉ</td>
+                <td> <input type="text" placeholder="abc,xyz"></td>
+            </tr>
+            <tr> 
+                <td>Điện thoại</td>
+                <td> <input type="tel" placeholder="0839712xxx"></td>
+            </tr>
+            <tr> 
+                <td>Chọn tour</td>
+                <td> 
+                    <select name="chọn tour" id="">
+                        <option value="Hà Nội – Hạ Long – Tuần Châu">Hà Nội – Hạ Long – Tuần Châu</option>
+                        <option value="Hà Nội – Sapa ">Hà Nội – Sapa </option>
+                        <option value="Đà Nẵng – Hội An">Đà Nẵng – Hội An</option>
+                        <option value="Buôn Mê Thuộc – Kon Tum">Buôn Mê Thuộc – Kon Tum</option>
+                        <option value="TP.HCM – Nha Trang">TP.HCM – Nha Trang</option>
+                        <option value="TP.HCM – Cần Thơ – Cà Mau">TP.HCM – Cần Thơ – Cà Mau</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Số lượng đoàn khách</td>
+                <td>
+                    Người lớn: <input type="number" name="adults" placeholder="1">
+                    Trẻ em: <input type="number" name="children" placeholder="0">
+                </td>
+            </tr>
+            <tr>
+                <td> Ghi chú</td>
+                <td> <textarea name="ghi chú" id="ghiChu" cols="100" rows="10"></textarea></td>
+            </tr>
+            
+        </table>
+        <button type="button" onclick="printConfirmation()"> Đăng ký</button>
+    </form>
+
+    <style>
+        table {
+            border-collapse: collapse; 
+            width: 100%;
+            border: 2px solid #000; 
+        }
+
+        td, th {
+            border: 1px solid #000; 
+            padding: 8px; 
+        }
+    </style>
+<script src="./Bai_6.js"></script>
+
+</body>
+</html>
